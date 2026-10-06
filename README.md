@@ -1,5 +1,7 @@
-# Kawaii Pet MEGU — public play host
+# Kawaii Pet MEGU — play host
 
-Static build of the private friend remake. Source + full pack live in the private repo `EricGuo214/kawaii-pet-megu`.
+Public GitHub Pages bundle for friends.
 
-Friends-only play URL. Not for redistribution beyond friends. Original KPM art remains copyrighted.
+**Play:** https://ericguo214.github.io/kawaii-pet-megu-play/
+
+Source stays in the private `EricGuo214/kawaii-pet-megu` repo. Do not treat this repo as the development source.
