@@ -147,23 +147,21 @@ return new `+this.key+`();
     </div>
     `),Q().querySelectorAll(`[data-act]`).forEach(e=>{e.addEventListener(`click`,()=>{X.playSfx(`SE_click.wav`);let t=e.dataset.act;$(),t===`food`&&Hn(),t===`sweep`&&Y.mutate(e=>{let t=Ze(e);t.ok?(X.playSfx(`SE_sweep.wav`),Tn(t.message),Pn(t.leveled,t.message)):Z(t.message)}),t===`bath`&&Qn(),t===`relocate`&&Yn(),t===`furniture`&&Xn(),t===`potions`&&Zn()})})}var In=e=>y(`oracle-cut/${e}`);function Ln(){An(`OUTING`,`orange`,`
     <div class="hub-tiles outing-tiles outing-tiles-exact">
-      <button type="button" data-out="walk" class="outing-tile">
-        <img class="outing-tile-icon oracle-hub-icon" src="${In(`icon-walk.png`)}"
-          onerror="this.src='${b(`buttons/btnIcon_stroll@2x.png`)}'" alt=""/>
-        <span>Walk</span>
+      <button type="button" data-out="walk" class="outing-tile outing-tile-labeled" aria-label="Walk">
+        <img class="outing-tile-icon oracle-hub-tile" src="${In(`tile-walk.png`)}"
+          onerror="this.onerror=null;this.src='${In(`icon-walk.png`)}'" alt="Walk"/>
       </button>
-      <button type="button" data-out="ball" class="outing-tile">
-        <img class="outing-tile-icon oracle-hub-icon" src="${In(`icon-balltoss.png`)}" alt="BallToss"/>
-        <span>BallToss</span>
+      <button type="button" data-out="ball" class="outing-tile outing-tile-labeled" aria-label="BallToss">
+        <img class="outing-tile-icon oracle-hub-tile" src="${In(`tile-balltoss.png`)}"
+          onerror="this.onerror=null;this.src='${In(`icon-balltoss.png`)}'" alt="BallToss"/>
       </button>
-      <button type="button" data-out="adventure" class="outing-tile">
-        <img class="outing-tile-icon oracle-hub-icon" src="${In(`icon-adventure.png`)}"
-          onerror="this.src='${b(`buttons/btnIcon_adventure@2x.png`)}'" alt=""/>
-        <span>Adventure</span>
+      <button type="button" data-out="adventure" class="outing-tile outing-tile-labeled" aria-label="Adventure">
+        <img class="outing-tile-icon oracle-hub-tile" src="${In(`tile-adventure.png`)}"
+          onerror="this.onerror=null;this.src='${In(`icon-adventure.png`)}'" alt="Adventure"/>
       </button>
-      <button type="button" data-out="strays" class="outing-tile outing-tile-strays">
-        <img class="outing-tile-icon oracle-hub-icon" src="${In(`icon-strays.png`)}" alt="STRAYS"/>
-        <span>STRAYS</span>
+      <button type="button" data-out="strays" class="outing-tile outing-tile-strays outing-tile-labeled" aria-label="STRAYS">
+        <img class="outing-tile-icon oracle-hub-tile" src="${In(`tile-strays.png`)}"
+          onerror="this.onerror=null;this.src='${In(`icon-strays.png`)}'" alt="STRAYS"/>
       </button>
     </div>
     `),Q().querySelector(`.modal`)?.classList.add(`outing-modal-exact`),Q().querySelectorAll(`[data-out]`).forEach(e=>{e.addEventListener(`click`,()=>{X.playSfx(`SE_click.wav`);let t=e.dataset.out;$(),t===`walk`&&Bn(),t===`ball`&&mr(),t===`adventure`&&yr(),t===`strays`&&Rn()})})}async function Rn(){let e=Ft(),t=Nt(e),n=Pt(e),r=zt(e,t),i=Y.save.pet,a=(e.detailEn||`A stray wants a match!`).slice(0,64)||`Alright! I won't lose! Nice to meet you!`;await cr(`
